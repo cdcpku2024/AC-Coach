@@ -500,7 +500,7 @@ class CoachController(QObject):
                         review_hint=error_card.get("review_hint", ""),
                         avoid_next_time=error_card.get("avoid_next_time", ""),
                         tags=_json_dump(error_card.get("tags", [])),
-                        review_priority=error_card.get("review_priority", "medium"),
+                        review_priority=error_card.get("priority", "medium"),
                     )
 
                     return "success"
